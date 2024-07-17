@@ -1,0 +1,104 @@
+/* App.css */
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  background-color: #161513;
+  height: 50px;
+  position: fixed;
+  user-select: none;
+  margin-bottom: 0px;
+}
+.nav
+{
+  user-select: none;
+  width: 100%;
+  display:flex;
+  position: fixed;
+
+}
+.tag1 .tag2 .fix{
+  user-select: none;
+
+}
+
+.nav-links2 {
+  user-select: none;
+
+  display: flex;
+  list-style: none; 
+  padding: 0;
+  background-color: #161513;
+  height: 50px;
+  justify-content: flex-end;
+  flex-grow: 1;
+  margin-bottom: 0px;
+} 
+
+.nav-links  li {
+  margin-top: 10px;
+  margin-right: 20px; /* Khoảng cách giữa các liên kết */
+}
+.nav-links2  li {
+  margin-top: 10px;
+  margin-right: 20px; /* Khoảng cách giữa các liên kết */
+}
+.tag1 {
+  margin-left: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+.tag2
+{
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 50;
+}
+.nav-links li a {
+  text-decoration: none; /* Loại bỏ gạch chân */
+  color: white; /* Đổi màu chữ thành màu xanh */
+}
+.nav-links2 li a {
+  text-decoration: none; /* Loại bỏ gạch chân */
+  color: white; /* Đổi màu chữ thành màu xanh */
+}
+
+.nav-links li a:hover {
+  color: #A0A0A0; /* Đổi màu chữ thành màu đỏ khi di chuột qua */
+}
+.nav-links2 li a:hover {
+  color: #A0A0A0; /* Đổi màu chữ thành màu đỏ khi di chuột qua */
+}
+/* components/Function1.module.css */
+.nav-links li.active {
+  position: relative;
+}
+
+.nav-links li.active::after {
+  content: '';
+  position: absolute;
+  bottom: -5px; /* Điều chỉnh vị trí gạch chân */
+  left: 0;
+  width: 100%;
+  height: 2px; /* Độ dày của gạch chân */
+  background-color: white; /* Màu sắc của gạch chân */
+  animation: underlineSlide 0.5s ease forwards; /* Thời gian và kiểu animation */
+}
+
+@keyframes underlineSlide {
+  from {
+    left: 50%;
+    width: 0;
+  }
+  to {
+    left: 0;
+    width: 100%;
+  }
+}

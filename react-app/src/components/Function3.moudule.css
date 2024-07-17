@@ -1,0 +1,8 @@
+/* components/Function1.module.css */
+.function1Container {
+    background-image: url('/background.png');
+    height: calc(100vh); /* Sử dụng calc() để tính toán chiều cao */
+    background-size: cover;
+    background-position: center;
+   
+  }

@@ -168,7 +168,21 @@ align-self: start;
   align-items: center; 
 
 }
+.tag{
+  color: white;
+  font-size: 2vh;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 10vh;
+  margin-left: 10vh;
+  position: absolute;
+  top: 0; /* Đặt ở đỉnh màn hình */
+  right: 0;
+  left: 45%;
 
+
+  
+}
 .theSun
 {
 
@@ -192,13 +206,28 @@ margin-top: 5vh;
 }
 .rectangle {
   width: 100%;
+  position: fixed;
+  display: flex; /* Sử dụng Flexbox */
+
   margin-top: 2%;
+  
   height: 60%;
   background-color:    #11111159;
   /* Màu nền và độ trong suốt tùy chỉnh */
-  position: absolute; /* Định vị tuyệt đối so với anhsang21 */
+  /* Định vị tuyệt đối so với anhsang21 */
   top: 25%; /* Điều chỉnh vị trí theo chiều dọc */
   z-index: 1; /* Đảm bảo nằm trên background và dưới theSun */
+}
+.nameTag {
+  position: absolute; /* Định vị tuyệt đối so với .rectangle */
+  color: #fff;
+  bottom: 0; /* Đặt ở dưới cùng */
+  margin-top: 9px; /* Điều chỉnh khoảng cách từ đỉnh, nếu cần */
+  margin-left: 28.5vh; /* Sử dụng px thay vì vh */
+  margin-bottom: 10vh;
+  font-size: 2vh; /* Ví dụ: đặt kích thước chữ cố định */
+  user-select: none;
+  opacity:0;
 }
 .backButton
 {
@@ -235,6 +264,7 @@ margin-top: 5vh;
   margin-left: 7px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 
 /* components/Function3.module.css */
 .function3Container {

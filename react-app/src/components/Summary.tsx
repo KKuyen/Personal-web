@@ -1,5 +1,7 @@
   import React from 'react';
   import styles from './Function1.module.css';
+  import Summary from '../context/Summary_context';
+  import Sun from '../context/Sun_context';
 
   const Function2: React.FC = () => {
     const [isFirstColor, setIsFirstColor] = React.useState(true);
@@ -17,14 +19,14 @@
             { opacity: 0 },
             { opacity: 1 }
           ], {
-            duration: 500, // 0.5 giây
+            duration: 1000, // 0.5 giây
             fill: 'forwards' // Giữ trạng thái cuối cùng của animation
           });
           // Kích hoạt animation cho sunElement
           if (sunElement) {
             sunElement.animate([
               { transform: 'translateX(-100%)', height: '90vh', width: '90vh' },
-              { transform: 'translateX(-120%)', height: '35vh', width: '35vh' }
+              { transform: 'translateX(-150%)', height: '35vh', width: '35vh' }
             ], {
               duration: 500, // 0.5 giây
               fill: 'forwards' // Giữ trạng thái cuối cùng của animation
@@ -66,7 +68,7 @@
           if (sunElement) {
             sunElement.animate([
              
-              { transform: 'translateX(-120%)', height: '35vh', width: '35vh' },
+              { transform: 'translateX(-150%)', height: '35vh', width: '35vh' },
               { transform: 'translateX(-100%)', height: '90vh', width: '90vh' }
             ], {
               duration: 500, // 0.5 giây
@@ -90,9 +92,21 @@
     return (
       <>
         <div className={styles.function2Container}>
-          
-
+      
         <div className={styles.rectangle}> 
+           
+        {isFirstColor ? (
+  // Component được hiển thị khi isFirstColor là true
+     <div className={styles.context}> 
+    <Summary />
+      </div>
+) : (
+  // Component được hiển thị khi isFirstColor là false
+     <div className={styles.context}> 
+    <Sun />
+     </div>
+)}
+        
           <p className={styles.nameTag}>"Sun"</p>
 
           <div className={styles.backButton} onClick={changeBackgroundDefault}>
@@ -104,7 +118,11 @@
          
         </div>
           <div className={styles.anhsang21}>
-          <p className={styles.tag}  >Summary</p>
+            <div className={styles.ftag} >
+            <p className={styles.tag2}  >S</p>
+            <p className={styles.tag}  >ummary</p>
+            </div>
+         
         
          
           

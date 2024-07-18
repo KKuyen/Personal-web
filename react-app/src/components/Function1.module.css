@@ -168,21 +168,42 @@ align-self: start;
   align-items: center; 
 
 }
-.tag{
-  color: white;
-  font-size: 2vh;
-  font-weight: bold;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.ftag
+{
   margin-top: 10vh;
   margin-left: 10vh;
   position: absolute;
+  
+  display: flex;
+    
   top: 0; /* Đặt ở đỉnh màn hình */
   right: 0;
-  left: 45%;
-
-
-  
+  left: 28%;
 }
+.tag{
+  color: white;
+  margin-top: 3vh;
+  font-weight: lighter;
+  font-family: sans-serif;
+  user-select: none;
+font-size: 7vh;
+}
+
+.tag2
+{
+  color: #FF8900;
+  margin-top: 1vh;
+
+  font-family: sans-serif;
+  user-select: none;
+font-size: 9vh;
+border-bottom: 0.7vh solid #FF8900;
+
+}
+  
+
+
+
 .theSun
 {
 
@@ -223,7 +244,7 @@ margin-top: 5vh;
   color: #fff;
   bottom: 0; /* Đặt ở dưới cùng */
   margin-top: 9px; /* Điều chỉnh khoảng cách từ đỉnh, nếu cần */
-  margin-left: 28.5vh; /* Sử dụng px thay vì vh */
+  margin-left: 17.9vh; /* Sử dụng px thay vì vh */
   margin-bottom: 10vh;
   font-size: 2vh; /* Ví dụ: đặt kích thước chữ cố định */
   user-select: none;
@@ -250,9 +271,10 @@ margin-top: 5vh;
 }
 .backImg
 {
-  margin-top: 9.5px;
-  height: 14px;
-  width: 12px;
+  margin-top: 1vh;
+
+  height: 1.2vh;
+  width: 1.2vh;
 
 
 }
@@ -260,12 +282,31 @@ margin-top: 5vh;
 {
   
   color: white;
-  font-size: 20px;
-  margin-left: 7px;
+  font-size: 2vh;
+  margin-left: 1vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.context {
+  position: absolute;
+  right: 0;
+  width: 100vh; /* Giữ nguyên hoặc điều chỉnh nếu cần */
+  height: 100%; /* Đặt chiều cao bằng 100% để kế thừa từ .rectangle */
+  left: 35%;
+  user-select: none;
 
+}
+.text_context_Summary
+{
+  color: white;
+  font-size: 2vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.divngang
+{
+  display: flex;
+}
 /* components/Function3.module.css */
 .function3Container {
   background-color: rgb(255, 111, 0);

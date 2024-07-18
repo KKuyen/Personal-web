@@ -7,6 +7,7 @@ import Function3 from './components/Function3';
 import Function4 from './components/Function4';
 import Function5 from './components/Function5';
 import Function6 from './components/Function6';
+import Function7 from './components/Function7';
 
 // Import các component khác tương tự
 import './App.css'; // Đảm bảo bạn đã import CSS
@@ -21,38 +22,42 @@ const App: React.FC = () => {
         <nav className="nav">
           <ul className="nav-links">
           <li className='tag1'>
-              <Link to="/function1">SOLAR</Link>
+              <Link to="/SOLAR">SOLAR</Link>
             </li>
             
           </ul>
           <ul className="nav-links2">
           <li className='tag2'>
-              <Link to="/function2">Summary</Link>
+              <Link to="/Summary">Summary</Link>
             </li>
             
             <li className='tag2'>
-              <Link to="/function3">Experience</Link>
+              <Link to="/Education">Education</Link>
             </li>
             <li  className='tag2'>
-              <Link to="/function4">Skills</Link>
+              <Link to="/Experience">Experience</Link>
             </li>
             <li className='tag2' >
-              <Link to="/function5">Projects</Link>
+              <Link to="/Skills">Skills</Link>
             </li>
             <li className='tag2' >
-              <Link to="/function6">Certificate</Link>
+              <Link to="/Projects">Projects</Link>
+            </li >
+            <li className='tag2' >
+              <Link to="/Certificate">Certificate</Link>
             </li >
            
           </ul>
         </nav>
 
         <Routes>
-          <Route path="/function1" element={<Function1 />} />
-          <Route path="/function2" element={<Function2 />} />
-          <Route path="/function3" element={<Function3 />} />
-          <Route path="/function4" element={<Function4 />} />
-          <Route path="/function5" element={<Function5 />} />
-          <Route path="/function6" element={<Function6 />} />
+          <Route path="/SOLAR" element={<Function1 />} />
+          <Route path="/Summary" element={<Function2 />} />
+          <Route path="/Education" element={<Function3 />} />
+          <Route path="/Experience" element={<Function4/>} />
+          <Route path="/Skills" element={<Function5 />} />
+          <Route path="/Projects" element={<Function6/>} />
+          <Route path="/Certificate" element={<Function7/>} />
           
         </Routes>
       </div>

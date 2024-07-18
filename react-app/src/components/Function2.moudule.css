@@ -1,8 +1,0 @@
-/* components/Function1.module.css */
-.function2Container {
-  background-color: red;
-    height: calc(100vh); /* Sử dụng calc() để tính toán chiều cao */
-    background-size: cover;
-    background-position: center;
-   
-  }

@@ -1,8 +1,10 @@
-// components/Function1.tsx
+import { Link } from 'react-router-dom'; // Import Link
+
 import React from 'react';
+import styles from './Function1.module.css';
 
 const Function3: React.FC = () => {
-  return <div>Đây là chức năng 3</div>;
+  return  <div className={styles.function3Container}></div>
 }
 
 export default Function3;

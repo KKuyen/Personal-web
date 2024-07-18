@@ -148,12 +148,43 @@ align-self: start;
 /* components/Function2.module.css */
 
 .function2Container {
-  background-color: red;
+  background-image: url('/bck.png');
   height: calc(100vh); /* Sử dụng calc() để tính toán chiều cao */
   background-size: cover;
   background-position: center;
  
 }
+.anhsang21
+{
+  background: linear-gradient(90deg, rgba(255, 137, 0, 0.3) 0%, rgba(34, 22, 10, 0.2) 47.16%, rgba(22, 21, 21, 0.2) 84.67%);
+ 
+  height: calc(100vh); /* Sử dụng calc() để tính toán chiều cao */
+  background-size: cover;
+  background-position: center;
+   display: flex; /* Thêm dòng này */
+  justify-content: center; /* Thêm dòng này */
+  align-items: center; 
+}
+
+.theSun
+{
+  background-image: url('/sun.png');
+  height: calc(90vh);
+  width: calc(90vh);
+  display: flex;
+
+margin-top: 5vh;
+  background-size: cover;
+  background-position: center;
+  position: relative; /* Đặt vị trí tương đối cho .theSun */
+
+  transform: translateX(-100%); /* Dịch chuyển sang phải 50% chiều rộng của nó */
+
+}
+.theSun:hover {
+  cursor: pointer; /* Thay đổi con trỏ khi hover */
+}
+
 
 /* components/Function3.module.css */
 .function3Container {

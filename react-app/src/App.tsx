@@ -1,13 +1,13 @@
 // App.tsx
 import React from 'react';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
-import Function1 from './components/Function1';
-import Function2 from './components/Function2';
-import Function3 from './components/Function3';
-import Function4 from './components/Function4';
-import Function5 from './components/Function5';
-import Function6 from './components/Function6';
-import Function7 from './components/Function7';
+import Function1 from './components/SOLAR';
+import Function2 from './components/Summary';
+import Function3 from './components/Education';
+import Function4 from './components/Experience';
+import Function5 from './components/Skills';
+import Function6 from './components/Projects';
+import Function7 from './components/Certificate';
 
 // Import các component khác tương tự
 import './App.css'; // Đảm bảo bạn đã import CSS

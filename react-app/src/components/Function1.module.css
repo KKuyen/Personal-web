@@ -148,6 +148,7 @@ align-self: start;
 /* components/Function2.module.css */
 
 .function2Container {
+  position: flex; 
   background-image: url('/bck.png');
   height: calc(100vh); /* Sử dụng calc() để tính toán chiều cao */
   background-size: cover;
@@ -156,7 +157,8 @@ align-self: start;
 }
 .anhsang21
 {
-  background: linear-gradient(90deg, rgba(255, 137, 0, 0.3) 0%, rgba(34, 22, 10, 0.2) 47.16%, rgba(22, 21, 21, 0.2) 84.67%);
+  
+   background: linear-gradient(90deg, rgba(255, 137, 0, 0.4) 0%, rgba(34, 22, 10, 0.2) 63.67%, rgba(22, 21, 21, 0.2) 84.67%);
  
   height: calc(100vh); /* Sử dụng calc() để tính toán chiều cao */
   background-size: cover;
@@ -164,10 +166,13 @@ align-self: start;
    display: flex; /* Thêm dòng này */
   justify-content: center; /* Thêm dòng này */
   align-items: center; 
+
 }
 
 .theSun
 {
+
+  user-select: none;
   background-image: url('/sun.png');
   height: calc(90vh);
   width: calc(90vh);
@@ -179,12 +184,57 @@ margin-top: 5vh;
   position: relative; /* Đặt vị trí tương đối cho .theSun */
 
   transform: translateX(-100%); /* Dịch chuyển sang phải 50% chiều rộng của nó */
+  z-index: 2;
 
 }
 .theSun:hover {
   cursor: pointer; /* Thay đổi con trỏ khi hover */
 }
+.rectangle {
+  width: 100%;
+  margin-top: 2%;
+  height: 60%;
+  background-color:    #11111159;
+  /* Màu nền và độ trong suốt tùy chỉnh */
+  position: absolute; /* Định vị tuyệt đối so với anhsang21 */
+  top: 25%; /* Điều chỉnh vị trí theo chiều dọc */
+  z-index: 1; /* Đảm bảo nằm trên background và dưới theSun */
+}
+.backButton
+{
 
+  margin-top: 9px;
+  user-select: none;
+  margin-left: 10px;
+  position: fixed;
+  display: flex;
+
+
+  border: white;  
+  height: 50px;
+  width: 50px;
+  transform: translateX(-200%);
+}
+.backButton :hover
+{
+  cursor: pointer;
+}
+.backImg
+{
+  margin-top: 9.5px;
+  height: 14px;
+  width: 12px;
+
+
+}
+.backTxt
+{
+  
+  color: white;
+  font-size: 20px;
+  margin-left: 7px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 /* components/Function3.module.css */
 .function3Container {

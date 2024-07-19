@@ -15,6 +15,15 @@ import { useState } from 'react';
 
 
 const App: React.FC = () => {
+  document.addEventListener('keydown', function(event) {
+    // Kiểm tra nếu phím Ctrl (hoặc Cmd trên macOS) và phím S được nhấn cùng lúc
+    if ((event.ctrlKey || event.metaKey) && event.key === 's') {
+      // Ngăn chặn hành động mặc định của trình duyệt
+      event.preventDefault();
+      // Bạn có thể thêm logic ở đây nếu muốn thông báo cho người dùng hoặc thực hiện hành động khác
+    
+    }
+  });
   const [activeLink, setActiveLink] = useState<string>('');
   return (
     <Router>

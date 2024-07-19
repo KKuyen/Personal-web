@@ -92,5 +92,63 @@
   bottom: 5vh;
   left: 10vw; /* Sử dụng vw để vị trí phụ thuộc vào chiều rộng của viewport */
   margin: 1vh 0 3vh 0; /* Cập nhật: thêm margin-left là 3vh */
-  margin-left: 3.8vh;
+  margin-left: 4vh;
+}
+
+
+
+/*sun*/
+
+.suntext
+{
+  color: white;
+  font-size: 2.2vh;
+  font-weight: 300;
+
+  
+  max-width: 70vh;
+  font-family: 'Inria Sans', sans-serif;
+  top: 5vh; /* Ví dụ, sử dụng vh để giữ vị trí tương đối với viewport */
+  left: 10vw; /* Sử dụng vw để vị trí phụ thuộc vào chiều rộng của viewport */
+  margin: 1vh 0; 
+  animation: slideDown 0.5s ease-out forwards;
+
+
+}
+.fp
+{
+  margin-top: 6vh;
+}
+.sun_highlight {
+  color: #FF8900
+  
+}
+.wikitxt
+{
+  color: #40C6FF;
+
+  font-size: 2.2vh;
+  font-weight: 300;
+text-decoration: underline;
+  
+  max-width: 70vh;
+  font-family: 'Inria Sans', sans-serif;
+  top: 5vh; /* Ví dụ, sử dụng vh để giữ vị trí tương đối với viewport */
+  left: 10vw; /* Sử dụng vw để vị trí phụ thuộc vào chiều rộng của viewport */
+  margin: 1vh 0;  
+
+}
+.fwiki {
+  margin-top: 5vh;
+  display: flex; /* Sử dụng flexbox để hiển thị nội dung trên một hàng ngang */
+  justify-content: flex-end; /* Đặt nội dung ở bên phải */
+  margin-right:35vh
+}
+.imglink
+{ 
+
+  height: 1.8vh;
+  width: 1.8vh; /* Chỉnh sửa giá trị này để thay đổi kích thước chiều rộng */
+  top: 1vh; 
+
 }

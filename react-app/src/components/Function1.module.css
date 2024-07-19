@@ -268,21 +268,24 @@ margin-top: 5vh;
 .backButton :hover
 {
   cursor: pointer;
+ 
+ 
 }
 .backImg
 {
-  margin-top: 1vh;
+  margin-top: 2.2vh;
+  
 
-  height: 1.2vh;
-  width: 1.2vh;
+  height: 1.4vh;
+  width: 1.4vh;
 
 
 }
 .backTxt
 {
-  
+  margin-top: 1vh ;
   color: white;
-  font-size: 2vh;
+  font-size: 2.3vh;
   margin-left: 1vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

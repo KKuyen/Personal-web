@@ -34,7 +34,7 @@ const Summary: React.FC = () => {
   useEffect(() => {
     changeBackground();
   }, []); // Mảng rỗng [] nghĩa là effect này chỉ chạy một lần sau khi component được mount
-
+ 
   return  (
    
     <>
@@ -72,3 +72,7 @@ const Summary: React.FC = () => {
 }
 
 export default Summary;
+
+function setIsVisible(arg0: boolean) {
+  throw new Error('Function not implemented.');
+}

@@ -10,9 +10,27 @@
       const sunElement = document.querySelector(`.${styles.theSun}`) as HTMLElement;
       const back =document.querySelector(`.${styles.backButton}`) as HTMLElement;
       const nameTag = document.querySelector(`.${styles.nameTag}`) as HTMLElement;
+      const summaryTag = document.querySelector(`.${styles.tag}`) as HTMLElement; // Lấy element chứa chữ "ummary"
       if (element) {
        
         if (isFirstColor) {
+          summaryTag.textContent = "un";
+
+          // Tạo animation di chuyển từ trái qua
+          summaryTag.animate([
+            { transform: 'translateX(-100%)' },
+            { transform: 'translateX(0%)' }
+          ], {
+            duration: 200, // 1 giây
+            fill: 'forwards'
+          });
+          summaryTag.animate([
+            { opacity: 0 },
+            { opacity: 1 }
+          ], {
+            duration: 200, // 0.5 giây
+            fill: 'forwards' // Giữ trạng thái cuối cùng của animation
+          });
           // Đặt màu nền sang màu thứ hai
         
           nameTag.animate([
@@ -51,8 +69,27 @@
       const sunElement = document.querySelector(`.${styles.theSun}`) as HTMLElement;
       const back =document.querySelector(`.${styles.backButton}`) as HTMLElement;
       const nameTag = document.querySelector(`.${styles.nameTag}`) as HTMLElement;
+      const summaryTag = document.querySelector(`.${styles.tag}`) as HTMLElement; 
+
       if (element) {
        
+        summaryTag.textContent = "ummary";
+
+        // Tạo animation di chuyển từ trái qua
+        summaryTag.animate([
+          { transform: 'translateX(+100%)' },
+          { transform: 'translateX(0%)' }
+        ], {
+          duration: 200, // 1 giây
+          fill: 'forwards'
+        });
+        summaryTag.animate([
+          { opacity: 0 },
+          { opacity: 1 }
+        ], {
+          duration: 200, // 0.5 giây
+          fill: 'forwards' // Giữ trạng thái cuối cùng của animation
+        });       
         if (!isFirstColor) {
        
           //ẩn hiện nametag

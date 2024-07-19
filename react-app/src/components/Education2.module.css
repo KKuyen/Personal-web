@@ -1,0 +1,375 @@
+/* components/Function1.module.css */
+.function1Container {
+    background-image: url('/background1.png');
+    height: calc(100vh);  /* Sử dụng calc() để tính toán chiều cao */
+    background-size: cover;
+    background-position: center;
+    user-select: none;
+   
+  }
+  .button
+  {
+  
+  }
+  .planetContainer {
+    display: flex; /* Sử dụng flexbox */
+    align-items: center;
+    
+  }
+  .text {
+    
+    color: black;
+    background-color: transparent; /* Làm cho nền trong suốt */
+    font-size: 20px;
+    font-weight: bold;
+  
+  
+  }
+  .block {
+    height: 50px;
+    width: 50px;
+  }
+  .images {
+    margin-top: 8vh;
+    height: 90vh;
+  align-self: start;
+    
+    user-select: none; 
+    pointer-events: none;
+  
+  }
+  .anhsang {
+    
+    width: 60vh;
+    height: calc(100vh);  /* Sử dụng calc() để tính toán chiều cao */
+    background: linear-gradient(90deg, rgba(255, 184, 0, 0.57) 4.67%, rgba(206, 112, 3, 0.35) 50%, rgba(42, 29, 20, 0) 100%);
+  }
+  .Mercury  .Venus .Earth .Mars .Jupiter .Saturn .Uranus .Neptune {
+   
+    align-self: start;
+    user-select: none;
+    overflow: hidden;
+    pointer-events: none;
+    transition: all 0.3s ease; /* Thêm hiệu ứng chuyển đổi mượt mà */
+  }
+  
+  .Mercury {
+    margin-left: 3vh;
+    height: 10px;
+    width: 10px;
+    
+  }
+  .Venus {
+    margin-left: 10vh;
+    height: 15px;
+    width: 15px;
+  }
+  .Earth
+  {
+    margin-left: 10vh;
+    height: 25px;
+    width: 25px;
+  
+  }
+  .Mars
+  {
+    margin-left: 10vh;
+    height: 20px;
+    width: 20px;
+  
+  }
+  .Jupiter
+  {
+    margin-left: 10vh;
+    height: 50px;
+    width: 50px;
+  
+  }
+  .Saturn
+  {
+    margin-left: 10vh;
+    height: 35px;
+    width: 35px;
+  
+  }
+  .Uranus
+  {
+    margin-left: 10vh;
+    height: 30px;
+    width: 50px;
+  
+  }
+  .Neptune
+  {
+    margin-left: 10vh;
+    height: 30px;
+    width: 30px;
+  
+  }
+  .Pluto
+  {
+    margin-left: 10vh;
+    height: 15px;
+    width: 15px;
+  }
+  .Mercury:hover .Venus:hover {
+    height: 100px; /* Tăng kích thước khi hover */
+    width: 100px;
+  }
+  
+  /* Tooltip CSS */
+  .Mercury::after {
+    content: "Mercury";
+    visibility: hidden;
+    opacity: 0;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px; /* Điều chỉnh để tooltip xuất hiện ở giữa */
+    transition: opacity 0.3s;
+  }
+  
+  .Mercury:hover::after {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  
+  
+  
+  
+  /* components/Function2.module.css */
+  
+  .function2Container {
+    position: flex; 
+    background-image: url('/bck.png');
+    height: calc(100vh); /* Sử dụng calc() để tính toán chiều cao */
+    background-size: cover;
+    background-position: center;
+   
+  }
+  .anhsang21
+  {
+    
+    background: linear-gradient(90deg, rgba(255, 16, 16, 0.4) 1.5%, rgba(255, 15, 2, 0.2) 12.5%, rgba(22, 21, 21, 0.05) 34%);
+
+
+
+   
+    height: calc(100vh); /* Sử dụng calc() để tính toán chiều cao */
+    background-size: cover;
+    background-position: center;
+     display: flex; /* Thêm dòng này */
+    justify-content: center; /* Thêm dòng này */
+    align-items: center; 
+  
+  }
+  .ftag
+  {
+    margin-top: 10vh;
+    margin-left: 10vh;
+    position: absolute;
+    
+    display: flex;
+      
+    top: 0; /* Đặt ở đỉnh màn hình */
+    right: 0;
+    left: 28%;
+  }
+  .ftag2
+  {
+
+ 
+    position: absolute;
+    
+    display: flex;
+   
+
+        
+
+  
+  }
+  .tag{
+    color: white;
+    margin-top: 3vh;
+    font-weight: lighter;
+    font-family: sans-serif;
+    user-select: none;
+  font-size: 7vh;
+  }
+  
+  .tag2
+  {
+    color: #FF3535;
+    margin-top: 1vh;
+  
+    font-family: sans-serif;
+    user-select: none;
+  font-size: 9vh;
+  border-bottom: 0.7vh solid #FF3535;
+  
+  }
+  .tag3
+  {
+    color: #FF3535;
+    margin-top: 1vh;
+  
+    font-family: sans-serif;
+    user-select: none;
+  font-size: 9vh;
+
+  }
+    
+  
+  
+  
+  .theSun
+  {
+  
+    user-select: none;
+    background-image: url('/Venus.png');
+    height: calc(90vh);
+    width: calc(90vh);
+    display: flex;
+  
+  margin-top: 5vh;
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Đặt vị trí tương đối cho .theSun */
+  
+    transform: translateX(-100%); /* Dịch chuyển sang phải 50% chiều rộng của nó */
+    z-index: 2;
+  
+  }
+  .theSun:hover {
+    cursor: pointer; /* Thay đổi con trỏ khi hover */
+  }
+  .rectangle {
+    width: 100%;
+    position: fixed;
+    display: flex; /* Sử dụng Flexbox */
+  
+    margin-top: 2%;
+    
+    height: 60%;
+    background-color:    #11111159;
+    /* Màu nền và độ trong suốt tùy chỉnh */
+    /* Định vị tuyệt đối so với anhsang21 */
+    top: 25%; /* Điều chỉnh vị trí theo chiều dọc */
+    z-index: 1; /* Đảm bảo nằm trên background và dưới theSun */
+  }
+  .nameTag {
+    position: absolute; /* Định vị tuyệt đối so với .rectangle */
+    color: #fff;
+    bottom: 0; /* Đặt ở dưới cùng */
+    margin-top: 9px; /* Điều chỉnh khoảng cách từ đỉnh, nếu cần */
+    margin-left: 17.2vh; /* Sử dụng px thay vì vh */
+    margin-bottom: 10vh;
+    font-size: 2vh; /* Ví dụ: đặt kích thước chữ cố định */
+    user-select: none;
+    opacity:0;
+  }
+  .backButton
+  {
+  
+    margin-top: 9px;
+    user-select: none;
+    margin-left: 10px;
+    position: fixed;
+    display: flex;
+  
+  
+    border: white;  
+    height: 50px;
+    width: 50px;
+    transform: translateX(-200%);
+  }
+  .backButton :hover
+  {
+    cursor: pointer;
+   
+   
+  }
+  .backImg
+  {
+    margin-top: 2.2vh;
+    
+  
+    height: 1.4vh;
+    width: 1.4vh;
+  
+  
+  }
+  .backTxt
+  {
+    margin-top: 1vh ;
+    color: white;
+    font-size: 2.3vh;
+    margin-left: 1vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .context {
+    position: absolute;
+    right: 0;
+    width: 100vh; /* Giữ nguyên hoặc điều chỉnh nếu cần */
+    height: 100%; /* Đặt chiều cao bằng 100% để kế thừa từ .rectangle */
+    left: 35%;
+    user-select: none;
+  
+  }
+  .text_context_Summary
+  {
+    color: white;
+    font-size: 2vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+  }
+  .divngang
+  {
+    display: flex;
+  }
+  /* components/Function3.module.css */
+  .function3Container {
+    background-color: rgb(255, 111, 0);
+    height: calc(100vh); /* Sử dụng calc() để tính toán chiều cao */
+    background-size: cover;
+    background-position: center;
+   
+  }
+  .function4Container {
+    background-color: green;
+    height: calc(100vh); /* Sử dụng calc() để tính toán chiều cao */
+    background-size: cover;
+    background-position: center;
+   
+  }
+  .function5Container {
+    background-color: gold;
+    height: calc(100vh); /* Sử dụng calc() để tính toán chiều cao */
+    background-size: cover;
+    background-position: center;
+   
+  }
+  .function6Container {
+    background-color: blue;
+    height: calc(100vh); /* Sử dụng calc() để tính toán chiều cao */
+    background-size: cover;
+    background-position: center;
+   
+  }
+  .function7Container {
+    background-color: purple;
+    height: calc(100vh); /* Sử dụng calc() để tính toán chiều cao */
+    background-size: cover;
+    background-position: center;
+   
+  }
+ 

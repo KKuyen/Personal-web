@@ -18,8 +18,8 @@
 
           // Tạo animation di chuyển từ trái qua
           summaryTag.animate([
-            { transform: 'translateX(-100%)' },
-            { transform: 'translateX(0%)' }
+            { transform: 'translateX(-100%)',color:'white' },
+            { transform: 'translateX(0%)',color:'#FF8900' }
           ], {
             duration: 200, // 1 giây
             fill: 'forwards'
@@ -77,8 +77,8 @@
 
         // Tạo animation di chuyển từ trái qua
         summaryTag.animate([
-          { transform: 'translateX(+100%)' },
-          { transform: 'translateX(0%)' }
+          { transform: 'translateX(+100%)', color:'#FF8900' },
+          { transform: 'translateX(0%)', color:'white' }
         ], {
           duration: 200, // 1 giây
           fill: 'forwards'
@@ -144,7 +144,7 @@
      </div>
 )}
         
-          <p className={styles.nameTag}>"Sun"</p>
+          <p className={styles.nameTag}></p>
 
           <div className={styles.backButton} onClick={changeBackgroundDefault}>
             <img className={styles.backImg} src="/arrow.png" alt="backButton" />

@@ -1,27 +1,40 @@
 .animate
 {
-  
+  margin-top: 8vh;
 }
-.text_context_Summary
+.ngang{
+  display: flex;
+  text-decoration: none;
+}
+.text_context_University
 {
   color: white;
-  font-size: 8vh;
+  font-size: 2.7vh;
+  font-weight: 600;
   font-family: 'Inria Sans', sans-serif;
   top: 5vh; /* Ví dụ, sử dụng vh để giữ vị trí tương đối với viewport */
   left: 10vw; /* Sử dụng vw để vị trí phụ thuộc vào chiều rộng của viewport */
   margin: 0vh 0; 
+  
+
 
 }
-.text_context_Summary2  
+.text_context_University:hover
 {
-  color: #FF8900;
-  font-size: 8vh;
-  font-weight: 550;
-  font-family: sans-serif;
+  text-decoration: underline  ;
+}
+.text_context_time 
+{
+  color: white;
+
+  font-size: 2.4vh;
   font-family: 'Inria Sans', sans-serif;
   top: 5vh; /* Ví dụ, sử dụng vh để giữ vị trí tương đối với viewport */
   left: 10vw; /* Sử dụng vw để vị trí phụ thuộc vào chiều rộng của viewport */
   margin: 0vh 0; 
+  margin-left: 30vh;
+  margin-top:2vh;
+
 }
 .text_context_Summary22
 {
@@ -117,10 +130,10 @@
 }
 .fp
 {
-  margin-top: 6vh;
+
 }
 .sun_highlight {
-  color: #FF8900;
+  color: #FF3535;
   font-size: 2.2vh;
   font-weight: 800;
 
@@ -131,6 +144,7 @@
 {
   color: #40C6FF;
 
+  
   font-size: 2.2vh;
   font-weight: 300;
 
@@ -139,8 +153,8 @@
   font-family: 'Inria Sans', sans-serif;
   top: 5vh; /* Ví dụ, sử dụng vh để giữ vị trí tương đối với viewport */
   left: 10vw; /* Sử dụng vw để vị trí phụ thuộc vào chiều rộng của viewport */
-  margin: 1vh 0; 
-  text-decoration: none; 
+  margin: 1vh 0;  
+  text-decoration: none;
 
 }
 .wikitxt:hover
@@ -156,10 +170,65 @@
 }
 .imglink
 { 
-
   margin-top: 0.6vh;
-  height: 1.8vh;
-  width: 1.8vh; /* Chỉnh sửa giá trị này để thay đổi kích thước chiều rộng */
-  top: 1vh; 
+  margin-left: 1px;
+  height: 2vh;
+  width: 2vh; /* Chỉnh sửa giá trị này để thay đổi kích thước chiều rộng */
+ 
 
 }
+.red
+{color: #FC5252;
+  font-size: 2.5vh;
+  font-weight: 800;
+  font-family: 'Inria Sans', sans-serif;
+  top: 5vh; /* Ví dụ, sử dụng vh để giữ vị trí tương đối với viewport */
+  left: 10vw; /* Sử dụng vw để vị trí phụ thuộc vào chiều rộng của viewport */
+  margin: 0vh 0; 
+  margin-top: 2vh;
+
+
+}
+.red1
+{color: #FC5252;
+  font-size: 2.5vh;
+  font-weight: 800;
+  font-family: 'Inria Sans', sans-serif;
+  top: 5vh; /* Ví dụ, sử dụng vh để giữ vị trí tương đối với viewport */
+  left: 10vw; /* Sử dụng vw để vị trí phụ thuộc vào chiều rộng của viewport */
+  margin: 0vh 0; 
+  margin-top: 2vh;
+  margin-right: 0.8vh;
+  margin-left: 8vh
+
+
+}
+.white
+{color: white;
+  font-size: 2.3vh;
+  font-weight: 600;
+  font-family: 'Inria Sans', sans-serif;
+  top: 5vh; /* Ví dụ, sử dụng vh để giữ vị trí tương đối với viewport */
+  left: 10vw; /* Sử dụng vw để vị trí phụ thuộc vào chiều rộng của viewport */
+  margin: 0vh 0; 
+  margin-left: 19vh;
+  margin-right: 4vh;
+  margin-top: 2vh;
+
+
+}
+.white1
+{color: white;
+  font-size: 2.3vh;
+  font-weight: 600;
+  font-family: 'Inria Sans', sans-serif;
+  top: 5vh; /* Ví dụ, sử dụng vh để giữ vị trí tương đối với viewport */
+  left: 10vw; /* Sử dụng vw để vị trí phụ thuộc vào chiều rộng của viewport */
+  margin: 0vh 0; 
+  margin-left: 10vh;
+  margin-right: 4vh;
+  margin-top: 2vh;
+
+
+}
+

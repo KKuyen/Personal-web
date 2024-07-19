@@ -17,7 +17,7 @@
   .anhsang21
   {
     
-    background: linear-gradient(90deg, rgba(255, 16, 16, 0.4) 1.5%, rgba(255, 15, 2, 0.2) 12.5%, rgba(22, 21, 21, 0.05) 34%);
+    background: linear-gradient(90deg, rgba(16, 255, 124, 0.4) 1.5%, rgba(2, 255, 95, 0.2) 12.5%, rgba(22, 21, 21, 0.05) 34%);
 
 
 
@@ -66,18 +66,18 @@
   
   .tag2
   {
-    color: #FF3535;
+    color: #00FF94;
     margin-top: 1vh;
   
     font-family: sans-serif;
     user-select: none;
   font-size: 9vh;
-  border-bottom: 0.7vh solid #FF3535;
+  border-bottom: 0.7vh solid #00FF94;
   
   }
   .tag3
   {
-    color: #FF3535;
+    color: #00FF94;
     margin-top: 1vh;
   
     font-family: sans-serif;
@@ -93,7 +93,7 @@
   {
   
     user-select: none;
-    background-image: url('/Venus.png');
+    background-image: url('/Mercury.png');
     height: calc(90vh);
     width: calc(90vh);
     display: flex;
@@ -195,5 +195,7 @@
   {
     display: flex;
   }
+ 
+  
   
   

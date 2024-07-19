@@ -63,11 +63,9 @@
 
 .divngang
 {
-
- margin-top: 5vh;
-  display: flex;
-  width: fit-content;
-  animation: slideDown 0.5s ease-out forwards;
+  display: flex; /* Tạo một flex container */
+  justify-content: space-between; /* Phân bố khoảng trống giữa các thành phần con */
+  align-items: center; /* Căn giữa các items theo chiều dọc */
 
 }
 .divngang2
@@ -230,4 +228,79 @@
   margin-top: 2vh;
 
 
+}
+.toeic
+{
+
+  color: white;
+  font-size: 2.6vh;
+  font-weight: 600;
+  font-family: 'Inria Sans', sans-serif;
+  top: 5vh; /* Ví dụ, sử dụng vh để giữ vị trí tương đối với viewport */
+  left: 10vw; /* Sử dụng vw để vị trí phụ thuộc vào chiều rộng của viewport */
+  margin: 0vh 0; 
+  margin-top:2.5vh;
+  margin-left:2.5vh
+  
+
+}
+.toeic:hover{
+  text-decoration: underline;
+
+}
+.baoquanh
+{
+
+  
+  width: 80vh;
+  border-radius: 1vh;
+ 
+  display: flex;
+  justify-content: space-between;
+
+}
+.fbaoquanh
+{
+  background-color: #1d684853;
+  height:15vh;
+  width: 80vh;
+  border-radius: 1vh;
+ 
+
+
+}
+.imglinktoeic
+{
+
+  margin-left: 1px;
+  height: 1.5vh;
+  width: 1.5vh; /* Chỉnh sửa giá trị này để thay đổi kích thước chiều rộng */
+  margin-top:2.5vh
+ 
+}
+.toeicdate {
+  color: white;
+  font-size: 2.4vh;
+  font-weight: 100;
+  font-family: 'Inria Sans', sans-serif;
+  top: 5vh; /* Ví dụ, sử dụng vh để giữ vị trí tương đối với viewport */
+  right: 0; /* Đặt vị trí bên trái của div ngang bằng 0 để nó nằm bên trái */
+  margin: 2.5vh 0 0 0; /* Cập nhật margin để chỉ định khoảng cách từ trên xuống */
+margin-right: 2.5vh;
+}
+.toeicdate2{
+  color: white;
+  font-size: 2.4vh;
+  font-weight: 600;
+  font-family: 'Inria Sans', sans-serif;
+  top: 5vh; /* Ví dụ, sử dụng vh để giữ vị trí tương đối với viewport */
+  right: 0; /* Đặt vị trí bên trái của div ngang bằng 0 để nó nằm bên trái */
+  margin: 2.5vh 0 0 0; /* Cập nhật margin để chỉ định khoảng cách từ trên xuống */
+margin-right: 2.5vh;
+}
+.sodiem
+{
+  display: flex;
+  margin-left:2.5vh;
+  margin-top:0.2vh
 }

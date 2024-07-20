@@ -1,9 +1,21 @@
-import React from 'react';
+
 import styles from './Education2.module.css';
 import Summary from '../context/Education_context';
 import Sun from '../context/Venus_context';
+import React, { useEffect, useState, Dispatch, SetStateAction } from 'react';
+import { useNavigate } from 'react-router-dom';
+interface Function2Props {
+  setActiveLink: Dispatch<SetStateAction<string>>;
+}
 
-const Function3: React.FC = () => {
+const Function3: React.FC<Function2Props> = ({ setActiveLink }) => {
+  const navigate = useNavigate();
+  
+  useEffect(() => {
+    setActiveLink('/Education');
+  }, [setActiveLink]);
+
+
   const [isFirstColor, setIsFirstColor] = React.useState(true);
   const changeBackground = () => {
     const element = document.querySelector(`.${styles.anhsang21}`) as HTMLElement;

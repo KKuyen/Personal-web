@@ -4,7 +4,7 @@
 }
 .text_context_Summary
 {
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 8vh;
   font-family: 'Inria Sans', sans-serif;
   top: 5vh; /* Ví dụ, sử dụng vh để giữ vị trí tương đối với viewport */
@@ -36,7 +36,7 @@
 }
 .text_context_Summary3
 {
-  color: white;
+  color: rgba(255, 255, 255, 0.874);
   font-size: 3vh;
   
  
@@ -81,7 +81,7 @@
   bottom: 5vh;
   left: 10vw; /* Sử dụng vw để vị trí phụ thuộc vào chiều rộng của viewport */
   margin: 1vh 0 3vh 0; /* Cập nhật: thêm margin-left là 3vh */
-  margin-left: 5vh;
+  margin-left: 3vh;
 }
 
 .img3 {
@@ -92,7 +92,7 @@
   bottom: 5vh;
   left: 10vw; /* Sử dụng vw để vị trí phụ thuộc vào chiều rộng của viewport */
   margin: 1vh 0 3vh 0; /* Cập nhật: thêm margin-left là 3vh */
-  margin-left: 4vh;
+  margin-left: 2vh;
 }
 
 
@@ -101,7 +101,7 @@
 
 .suntext
 {
-  color: white;
+  color: rgba(255, 255, 255, 0.874);
   font-size: 2.2vh;
   font-weight: 300;
 

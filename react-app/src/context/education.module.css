@@ -25,7 +25,7 @@
 }
 .text_context_time 
 {
-  color: white;
+  color: rgba(255, 255, 255, 0.902);
 
   font-size: 2.4vh;
   font-family: 'Inria Sans', sans-serif;
@@ -114,7 +114,7 @@
 
 .suntext
 {
-  color: white;
+  color: rgba(255, 255, 255, 0.874);
   font-size: 2.2vh;
   font-weight: 300;
 

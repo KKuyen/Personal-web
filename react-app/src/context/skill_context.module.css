@@ -64,8 +64,8 @@
 .divngang
 {
   display: flex; /* Tạo một flex container */
-  justify-content: space-between; /* Phân bố khoảng trống giữa các thành phần con */
-  align-items: center; /* Căn giữa các items theo chiều dọc */
+ 
+   /* Căn giữa các items theo chiều dọc */
 
 }
 .divngang2
@@ -112,7 +112,7 @@
 
 .suntext
 {
-  color: rgba(255, 255, 255, 0.817);
+  color: white;
   font-size: 2.2vh;
   font-weight: 300;
 
@@ -131,7 +131,7 @@
 
 }
 .sun_highlight {
-  color: #00FF94;
+  color: #C3A077;
   font-size: 2.2vh;
   font-weight: 800;
 
@@ -279,7 +279,7 @@
  
 }
 .toeicdate {
-  color: rgba(255, 255, 255, 0.779);
+  color: white;
   font-size: 2.4vh;
   font-weight: 100;
   font-family: 'Inria Sans', sans-serif;
@@ -289,7 +289,7 @@
 margin-right: 2.5vh;
 }
 .toeicdate2{
-  color: rgb(255, 255, 255);
+  color: rgba(255, 255, 255, 0.897);
   font-size: 2.4vh;
   font-weight: 600;
   font-family: 'Inria Sans', sans-serif;
@@ -303,4 +303,25 @@ margin-right: 2.5vh;
   display: flex;
   margin-left:2.5vh;
   margin-top:0.2vh
+}
+.Skillsline
+{
+  color: rgba(255, 255, 255, 0.945);
+  font-size: 2.4vh;
+  max-width:80vh;
+      font-weight: 300;
+  font-family: 'Inria Sans', sans-serif;
+ 
+
+
+margin-right: 2.5vh;  
+margin-left: 5vh;
+margin-bottom: 2.5vh;
+}
+.linethang
+{
+  background: #AC8B65;
+  width: 1vh;
+  height: 25vh;
+ 
 }

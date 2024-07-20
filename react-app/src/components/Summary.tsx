@@ -1,9 +1,21 @@
-  import React from 'react';
+
   import styles from './Function1.module.css';
   import Summary from '../context/Summary_context';
   import Sun from '../context/Sun_context';
-
-  const Function2: React.FC = () => {
+  import React, { useEffect, useState, Dispatch, SetStateAction } from 'react';
+  import { useNavigate } from 'react-router-dom';
+  interface Function2Props {
+    setActiveLink: Dispatch<SetStateAction<string>>;
+  }
+  
+  
+  const Function2: React.FC<Function2Props> = ({ setActiveLink }) => {
+    const navigate = useNavigate();
+    
+  
+    useEffect(() => {
+      setActiveLink('/Summary');
+    }, [setActiveLink]);
     const [isFirstColor, setIsFirstColor] = React.useState(true);
     const changeBackground = () => {
       const element = document.querySelector(`.${styles.anhsang21}`) as HTMLElement;

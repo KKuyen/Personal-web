@@ -1,9 +1,19 @@
-import React from 'react';
+
 import styles from './Certificate_tab.module.css';
 import Summary from '../context/Certificate_context ';
-import Sun from '../context/Venus_context';
+import Sun from '../context/Mercury_context';
+import React, { useEffect, useState, Dispatch, SetStateAction } from 'react';
+import { useNavigate } from 'react-router-dom';
+interface Function2Props {
+  setActiveLink: Dispatch<SetStateAction<string>>;
+}
 
-const Function3: React.FC = () => {
+const Function7: React.FC<Function2Props> = ({ setActiveLink }) => {
+  const navigate = useNavigate();
+  
+  useEffect(() => {
+    setActiveLink('/Certificate');
+  }, [setActiveLink]);
   const [isFirstColor, setIsFirstColor] = React.useState(true);
 
     const back1="ertificate";
@@ -219,4 +229,4 @@ const Function3: React.FC = () => {
   );
 }
 
-export default Function3
+export default Function7

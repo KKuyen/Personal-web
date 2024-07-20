@@ -1,8 +1,53 @@
-/* App.css */
+.tag2.summary a {
+  color: #FF8900; /* Màu cho Summary */
+  border-bottom: 0.25vh solid #FF8900;
+  font-weight: 500;
+}
 
+.tag2.education a {
+  color: #FF3535; /* Màu cho Education */
+  border-bottom: 0.25vh solid #FF3535;
+  font-weight: 500;
+}
+
+.tag2.experience a {
+  color: #0094FF; /* Màu cho Experience */
+  border-bottom: 0.25vh solid #0094FF;
+  font-weight: 500;
+}
+
+.tag2.skills a {
+  color: #AC8B65; /* Màu cho Skills */
+  border-bottom: 0.25vh solid #AC8B65;
+  font-weight: 500;
+}
+
+.tag2.projects a {
+  color: #A57BFD; /* Màu cho Projects */
+  border-bottom: 0.25vh solid #A57BFD;
+  font-weight: 500;
+
+}
+
+.tag2.certificate a {
+  color: #00FF94; /* Màu cho Certificate */
+  border-bottom: 0.25vh solid #00FF94;
+  font-weight: 500;
+}
+.nav-links li.active a {
+  color: orange; /* Màu cam cho link đang được chọn */
+  border-bottom: 0.3vh solid orange;
+  font-weight: 700;
+
+}
+
+
+.nav-links2 a {
+  color: white; /* Màu trắng cho các link khác */
+}
 .nav-links {
   display: flex;
-  height: 6vh;
+  height: 5.5vh;
   list-style: none;
   padding: 0;
   background-color: #161513;
@@ -15,7 +60,7 @@
 {
   user-select: none;
   width: 100%;
-  height: 6vh;
+  height: 5.5vh;
   display:flex;
   position: fixed;
   
@@ -41,7 +86,7 @@
   list-style: none; 
   padding: 0;
   background-color: #161513;
-  height: 6h;
+  height: 5h;
   justify-content: flex-end;
   flex-grow: 1;
   margin-bottom: 0px;
@@ -57,8 +102,8 @@
 }
 .tag1 {
   margin-left: 10px;
-  color: #fff;
-  text-decoration: none;
+  color: white;
+ 
   font-size: 2vh;
   font-weight: bold;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -82,35 +127,28 @@
   color: white; /* Đổi màu chữ thành màu xanh */
 }
 
-.nav-links li a:hover {
-  color: #A0A0A0; /* Đổi màu chữ thành màu đỏ khi di chuột qua */
+.nav-links li:not(.active) a:hover
+{
+  color: #A0A0A0; /* Màu khi hover, chỉ áp dụng cho liên kết không active */
+    cursor:pointer
 }
-.nav-links2 li a:hover {
-  color: #A0A0A0; /* Đổi màu chữ thành màu đỏ khi di chuột qua */
+.nav-links2 li:not(.summary):not(.education):not(.experience):not(.skills):not(.projects):not(.certificate) a:hover {
+  color: #A0A0A0; /* Màu khi hover, chỉ áp dụng cho liên kết không active */
+  cursor:pointer;
+
 }
+.nav-links a:hover {
+  cursor:default;
+}
+.nav-links2 a:hover {
+  cursor:default;
+}
+
 /* components/Function1.module.css */
 .nav-links li.active {
   position: relative;
 }
 
-.nav-links li.active::after {
-  content: '';
-  position: absolute;
-  bottom: -5px; /* Điều chỉnh vị trí gạch chân */
-  left: 0;
-  width: 100%;
-  height: 2px; /* Độ dày của gạch chân */
-  background-color: white; /* Màu sắc của gạch chân */
-  animation: underlineSlide 0.5s ease forwards; /* Thời gian và kiểu animation */
-}
 
-@keyframes underlineSlide {
-  from {
-    left: 50%;
-    width: 0;
-  }
-  to {
-    left: 0;
-    width: 100%;
-  }
-}
+/*SOLAR 
+

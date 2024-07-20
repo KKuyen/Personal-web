@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'; // Import Link
 
 import React, { useEffect } from 'react';
-import styles from './certificate_context.module.css'; // Update the import statement
+import styles from './skill_context.module.css'; // Update the import statement
 
 const Summary: React.FC = () => {
   const changeBackground = () => {
@@ -38,39 +38,29 @@ const Summary: React.FC = () => {
   return  (
    
     <>
-    <div className={styles.animate}>
-      <div  className={styles.divdoc}>
-        <div className={styles.fbaoquanh}>
-        <div className={styles.baoquanh} >
-    
-    <div className={styles.ngang}>
-    <a href='https://student.uit.edu.vn/sites/daa/files/bangcap/22521225/22521225_bangcap_TOEIC_LR_20231215182217.jpg' className={styles.ngang} target="_blank" rel="noopener noreferrer" >
-     
-     <div className={styles.toeic}>TOEIC L&R</div>
-     </a>
-    
-     <img className={styles.imglinktoeic}  src="/external-link.png" alt="Description 3" />
-    </div>
-      
-      <div  className={styles.toeicdate}>2023</div>
-
-
-   
-
-         </div>
-         <div className={styles.sodiem}>
-         <div className={styles.toeicdate} > Score:</div>
-         <div className={styles.toeicdate2} >820</div>
-
-
-</div>
-         </div>
-       
-        
+      <div className={styles.animate}>
+    <div className={styles.divngang}>
+      <div className={styles.linethang}> </div>
+    <div>
+    <div >
+    <div className={styles.Skillsline}>
+       - C++, C#, Java, JavaScript(NodeJS), CSS, HTLM, TypeScript, XML, XAML
 
       </div>
+      <div className={styles.Skillsline}>
+       - WPF, Android Studio, JavaFX, React
+      </div>
+      
+      <div className={styles.Skillsline}>
+       - MS SQL Sever, MySQL
+      </div>
+    </div>
      
     </div>
+    </div>
+    
+    </div>
+    
     </>
   )
 }

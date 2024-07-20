@@ -1,0 +1,202 @@
+/* components/Function1.module.css */
+
+  
+  
+  
+  
+  /* components/Function2.module.css */
+  
+  .function2Container {
+    position: flex; 
+    background-image: url('/bck.png');
+    height: calc(100vh); /* Sử dụng calc() để tính toán chiều cao */
+    background-size: cover;
+    background-position: center;
+   
+  }
+  .anhsang21
+  {
+    
+    background: linear-gradient(90deg, rgba(123, 20, 249, 0.4) 1.5%, rgba(134, 43, 246, 0.2) 12.5%, rgba(22, 21, 21, 0.05) 34%);
+
+
+
+   
+    height: calc(100vh); /* Sử dụng calc() để tính toán chiều cao */
+    background-size: cover;
+    background-position: center;
+     display: flex; /* Thêm dòng này */
+   
+    align-items: center; 
+  
+  }
+  .ftag
+  {
+    margin-top: 10vh;
+    margin-left: 10vh;
+    position: absolute;
+    
+    display: flex;
+      
+    top: 0; /* Đặt ở đỉnh màn hình */
+    right: 0;
+    left: 28%;
+  }
+  .ftag2
+  {
+
+ 
+    position: absolute;
+    
+    display: flex;
+   
+
+        
+
+  
+  }
+  .tag{
+    color: white;
+    margin-top: 3vh;
+    font-weight: lighter;
+    font-family: sans-serif;
+    user-select: none;
+  font-size: 7vh;
+  }
+  
+  .tag2
+  {
+    color: #A57BFD;
+    margin-top: 1vh;
+  
+    font-family: sans-serif;
+    user-select: none;
+  font-size: 9vh;
+  border-bottom: 0.7vh solid #A57BFD;
+  
+  }
+  .tag3
+  {
+    color: #A57BFD;
+    margin-top: 1vh;
+  
+    font-family: sans-serif;
+    user-select: none;
+  font-size: 9vh;
+
+  }
+    
+  
+  
+  
+  .theSun
+  {
+  
+    user-select: none;
+    background-image: url('/Pluto.png');
+    height: calc(90vh);
+    width: calc(90vh);
+    display: flex;
+  
+  margin-top: 5vh;
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Đặt vị trí tương đối cho .theSun */
+  top:0;
+    transform: translateX(-75%); /* Dịch chuyển sang phải 50% chiều rộng của nó */
+    z-index: 2;
+  
+  }
+  .theSun:hover {
+    cursor: pointer; /* Thay đổi con trỏ khi hover */
+  }
+  .rectangle {
+    width: 100%;
+    position: fixed;
+    display: flex; /* Sử dụng Flexbox */
+  
+    margin-top: 2%;
+    
+    height: 60%;
+    background-color:    #11111159;
+    /* Màu nền và độ trong suốt tùy chỉnh */
+    /* Định vị tuyệt đối so với anhsang21 */
+    top: 25%; /* Điều chỉnh vị trí theo chiều dọc */
+    z-index: 1; /* Đảm bảo nằm trên background và dưới theSun */
+  }
+  .nameTag {
+    position: absolute; /* Định vị tuyệt đối so với .rectangle */
+    color: #fff;
+    bottom: 0; /* Đặt ở dưới cùng */
+    margin-top: 9px; /* Điều chỉnh khoảng cách từ đỉnh, nếu cần */
+    margin-left: 24.9vh; /* Sử dụng px thay vì vh */
+    margin-bottom: 10vh;
+    font-size: 2vh; /* Ví dụ: đặt kích thước chữ cố định */
+    user-select: none;
+    opacity:0;
+ font-style: italic;
+  }
+  .backButton
+  {
+  
+    margin-top: 9px;
+    user-select: none;
+    margin-left: 10px;
+    position: fixed;
+    display: flex;
+  
+  
+    border: white;  
+    height: 50px;
+    width: 50px;
+    transform: translateX(-200%);
+  }
+  .backButton :hover
+  {
+    cursor: pointer;
+   
+   
+  }
+  .backImg
+  {
+    margin-top: 2.2vh;
+    
+  
+    height: 1.4vh;
+    width: 1.4vh;
+  
+  
+  }
+  .backTxt
+  {
+    margin-top: 1vh ;
+    color: white;
+    font-size: 2.3vh;
+    margin-left: 1vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .context {
+    position: absolute;
+    right: 0;
+    width: 100vh; /* Giữ nguyên hoặc điều chỉnh nếu cần */
+    height: 100%; /* Đặt chiều cao bằng 100% để kế thừa từ .rectangle */
+    left: 35%;
+    user-select: none;
+  
+  }
+  .text_context_Summary
+  {
+    color: white;
+    font-size: 2vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+  }
+  .divngang
+  {
+    display: flex;
+  }
+ 
+  
+  
+  

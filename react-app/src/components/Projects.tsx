@@ -1,6 +1,6 @@
 
 import styles from './Projects_tab.module.css';
-import Summary from '../context/Certificate_context ';
+import Summary from '../context/Projects_context';
 import Sun from '../context/Mercury_context';
 import React, { useEffect, useState, Dispatch, SetStateAction } from 'react';
 import { useNavigate } from 'react-router-dom';

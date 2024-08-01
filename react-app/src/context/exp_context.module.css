@@ -1,0 +1,404 @@
+.animate
+{
+  margin-top: 5vh;
+}
+.ngang{
+  display: flex;
+  text-decoration: none;
+}
+.text_context_University
+{
+  color: white;
+  font-size: 2.7vh;
+  font-weight: 600;
+  font-family: 'Inria Sans', sans-serif;
+  top: 5vh; /* Ví dụ, sử dụng vh để giữ vị trí tương đối với viewport */
+  left: 10vw; /* Sử dụng vw để vị trí phụ thuộc vào chiều rộng của viewport */
+  margin: 0vh 0; 
+  
+
+
+}
+.text_context_University:hover
+{
+  text-decoration: underline  ;
+}
+.text_context_time 
+{
+  color: white;
+
+  font-size: 2.4vh;
+  font-family: 'Inria Sans', sans-serif;
+  top: 5vh; /* Ví dụ, sử dụng vh để giữ vị trí tương đối với viewport */
+  left: 10vw; /* Sử dụng vw để vị trí phụ thuộc vào chiều rộng của viewport */
+  margin: 0vh 0; 
+  margin-left: 20vh;
+  margin-top:2vh;
+
+}
+.text_context_Summary22
+{
+  color: #FF8900;
+  font-size: 8vh;
+  font-weight: 550;
+  font-family: sans-serif;
+  font-family: 'Inria Sans', sans-serif;
+  top: 5vh; /* Ví dụ, sử dụng vh để giữ vị trí tương đối với viewport */
+  left: 10vw; /* Sử dụng vw để vị trí phụ thuộc vào chiều rộng của viewport */
+  margin: 0vh 0; 
+}
+.text_context_Summary3
+{
+  color: white;
+  font-size: 3vh;
+  
+ 
+  font-family: 'Inria Sans', sans-serif;
+  top: 5vh; /* Ví dụ, sử dụng vh để giữ vị trí tương đối với viewport */
+  left: 10vw; /* Sử dụng vw để vị trí phụ thuộc vào chiều rộng của viewport */
+  margin: 1vh 0; 
+  animation: slideDown 0.5s ease-out forwards;
+
+}
+
+.divngang
+{
+  display: flex; /* Tạo một flex container */
+  /* Phân bố khoảng trống giữa các thành phần con */
+  align-items: center; /* Căn giữa các items theo chiều dọc */
+
+}
+.divngang2
+{
+  margin-top: 3vh;
+  display: flex;
+
+}
+.img {
+  height: 4.15vh;
+  width: 4.15vh; /* Chỉnh sửa giá trị này để thay đổi kích thước chiều rộng */
+  top: 5vh; /* Ví dụ, sử dụng vh để giữ vị trí tương đối với viewport */
+  bottom: 5vh;
+  left: 10vw; /* Sử dụng vw để vị trí phụ thuộc vào chiều rộng của viewport */
+  margin: 1.3vh 0 3vh 0; /* Cập nhật: thêm margin-left là 3vh */
+ 
+}
+
+.img2 {
+
+
+  width: 5vh; /* Chỉnh sửa giá trị này để thay đổi kích thước chiều rộng */
+  top: 5vh; /* Ví dụ, sử dụng vh để giữ vị trí tương đối với viewport */
+  bottom: 5vh;
+  left: 10vw; /* Sử dụng vw để vị trí phụ thuộc vào chiều rộng của viewport */
+  margin: 1vh 0 3vh 0; /* Cập nhật: thêm margin-left là 3vh */
+  margin-left: 5vh;
+}
+
+.img3 {
+
+
+  width: 5vh; /* Chỉnh sửa giá trị này để thay đổi kích thước chiều rộng */
+  top: 5vh; /* Ví dụ, sử dụng vh để giữ vị trí tương đối với viewport */
+  bottom: 5vh;
+  left: 10vw; /* Sử dụng vw để vị trí phụ thuộc vào chiều rộng của viewport */
+  margin: 1vh 0 3vh 0; /* Cập nhật: thêm margin-left là 3vh */
+  margin-left: 4vh;
+}
+
+
+
+/*sun*/
+
+.suntext
+{
+  color: rgba(255, 255, 255, 0.817);
+  font-size: 2.2vh;
+  font-weight: 300;
+
+  
+  max-width: 75vh;
+  font-family: 'Inria Sans', sans-serif;
+  top: 5vh; /* Ví dụ, sử dụng vh để giữ vị trí tương đối với viewport */
+  left: 10vw; /* Sử dụng vw để vị trí phụ thuộc vào chiều rộng của viewport */
+  margin: 1vh 0; 
+  animation: slideDown 0.5s ease-out forwards;
+
+
+}
+.fp
+{
+
+}
+.sun_highlight {
+  color: #0094FF;
+  font-size: 2.2vh;
+  font-weight: 800;
+
+
+  font-family: 'Inria Sans', sans-serif;
+}
+.wikitxt
+{
+  color: #40C6FF;
+
+  
+  font-size: 2.2vh;
+  font-weight: 300;
+
+  
+  max-width: 70vh;
+  font-family: 'Inria Sans', sans-serif;
+  top: 5vh; /* Ví dụ, sử dụng vh để giữ vị trí tương đối với viewport */
+  left: 10vw; /* Sử dụng vw để vị trí phụ thuộc vào chiều rộng của viewport */
+  margin: 1vh 0;  
+  text-decoration: none;
+
+}
+.wikitxt:hover
+{
+  text-decoration: underline;
+}
+.fwiki {
+  margin-top: 5vh;
+  display: flex; /* Sử dụng flexbox để hiển thị nội dung trên một hàng ngang */
+  justify-content: flex-end; /* Đặt nội dung ở bên phải */
+  margin-right:35vh;
+  text-decoration: none;
+}
+.imglink
+{ 
+  margin-top: 0.6vh;
+  margin-left: 1px;
+  height: 2vh;
+  width: 2vh; /* Chỉnh sửa giá trị này để thay đổi kích thước chiều rộng */
+ 
+
+}
+.red
+{color: #FC5252;
+  font-size: 2.5vh;
+  font-weight: 800;
+  font-family: 'Inria Sans', sans-serif;
+  top: 5vh; /* Ví dụ, sử dụng vh để giữ vị trí tương đối với viewport */
+  left: 10vw; /* Sử dụng vw để vị trí phụ thuộc vào chiều rộng của viewport */
+  margin: 0vh 0; 
+  margin-top: 2vh;
+
+
+}
+.red1
+{color: #FC5252;
+  font-size: 2.5vh;
+  font-weight: 800;
+  font-family: 'Inria Sans', sans-serif;
+  top: 5vh; /* Ví dụ, sử dụng vh để giữ vị trí tương đối với viewport */
+  left: 10vw; /* Sử dụng vw để vị trí phụ thuộc vào chiều rộng của viewport */
+  margin: 0vh 0; 
+  margin-top: 2vh;
+  margin-right: 0.8vh;
+  margin-left: 8vh
+
+
+}
+.white
+{color: white;
+  font-size: 2.3vh;
+  font-weight: 600;
+  font-family: 'Inria Sans', sans-serif;
+  top: 5vh; /* Ví dụ, sử dụng vh để giữ vị trí tương đối với viewport */
+  left: 10vw; /* Sử dụng vw để vị trí phụ thuộc vào chiều rộng của viewport */
+  margin: 0vh 0; 
+  margin-left: 10vh;
+  margin-right: 4vh;
+  margin-top: 2vh;
+
+
+}
+.white1
+{color: white;
+  font-size: 2.3vh;
+  font-weight: 600;
+  font-family: 'Inria Sans', sans-serif;
+  top: 5vh; /* Ví dụ, sử dụng vh để giữ vị trí tương đối với viewport */
+  left: 10vw; /* Sử dụng vw để vị trí phụ thuộc vào chiều rộng của viewport */
+  margin: 0vh 0; 
+  margin-left: 9vh;
+  margin-right: 4vh;
+  margin-top: 2vh;
+
+
+}
+.toeic
+{
+
+  color: white;
+  font-size: 2.6vh;
+  font-weight: 600;
+  font-family: 'Inria Sans', sans-serif;
+  top: 5vh; /* Ví dụ, sử dụng vh để giữ vị trí tương đối với viewport */
+  left: 10vw; /* Sử dụng vw để vị trí phụ thuộc vào chiều rộng của viewport */
+  margin: 0vh 0; 
+  margin-top:2.5vh;
+  margin-left:2.5vh
+  
+
+}
+.toeic:hover{
+  text-decoration: underline;
+
+}
+.baoquanh
+{
+
+  
+  width: 80vh;
+  border-radius: 1vh;
+ 
+  display: flex;
+  justify-content: space-between;
+
+}
+.fbaoquanh
+{
+  background-color: #4d2d9350;
+  height: fit-content;
+  width: 80vh;
+  border-radius: 1vh;
+  margin-top: 1.9vh;
+ 
+
+
+}
+.imglinktoeic
+{
+
+  margin-left: 1px;
+  height: 1.5vh;
+  width: 1.5vh; /* Chỉnh sửa giá trị này để thay đổi kích thước chiều rộng */
+
+ 
+}
+.toeicdate {
+  color: rgba(255, 255, 255, 0.779);
+  font-size: 2.4vh;
+  font-weight: 100;
+  font-family: 'Inria Sans', sans-serif;
+  top: 5vh; /* Ví dụ, sử dụng vh để giữ vị trí tương đối với viewport */
+  right: 0; /* Đặt vị trí bên trái của div ngang bằng 0 để nó nằm bên trái */
+  margin: 2.5vh 0 0 0; /* Cập nhật margin để chỉ định khoảng cách từ trên xuống */
+margin-right: 2.5vh;
+}
+.toeicdate2{
+  color: rgb(255, 255, 255);
+  font-size: 2.4vh;
+  font-weight: 600;
+  font-family: 'Inria Sans', sans-serif;
+  top: 5vh; /* Ví dụ, sử dụng vh để giữ vị trí tương đối với viewport */
+  right: 0; /* Đặt vị trí bên trái của div ngang bằng 0 để nó nằm bên trái */
+  margin: 2.5vh 0 0 0; /* Cập nhật margin để chỉ định khoảng cách từ trên xuống */
+margin-right: 2.5vh;
+}
+.sodiem
+{
+  display: flex;
+  margin-left:2.5vh;
+  margin-top:0.2vh
+}
+.items
+{
+  background-color: #00FF94;
+  height: 50px;
+  width: 100%;
+}
+.scrollableList {
+  max-height: 60vh; /* Hoặc chiều cao bạn muốn */
+  overflow-y: auto;
+  user-select: none; /* Ngăn chặn việc chọn văn bản khi kéo */
+  cursor: grab; 
+  
+}
+.scrollableList.grabbing {
+  cursor: grabbing; /* Con trỏ khi đang kéo */
+}
+/* Ẩn scrollbar cho Chrome, Safari, ... */
+.scrollableList::-webkit-scrollbar {
+  display: none;
+}
+
+/* Ẩn scrollbar cho Firefox */
+.scrollableList {
+  scrollbar-width: none;
+}
+.text{
+  color: rgba(255, 255, 255, 0.927);
+  font-size: 2.4vh;
+  font-weight: 400;
+
+  font-family: 'Inria Sans', sans-serif;
+  top: 5vh; /* Ví dụ, sử dụng vh để giữ vị trí tương đối với viewport */
+  right: 0; /* Đặt vị trí bên trái của div ngang bằng 0 để nó nằm bên trái */
+  margin: 1vh 0 0 0; /* Cập nhật margin để chỉ định khoảng cách từ trên xuống */
+margin-right: 2.5vh;
+margin-left: 2.5vh;
+overflow-wrap: break-word; /* Ngăn chữ tràn ra ngoài khung */
+
+
+
+}
+.Utilized
+{  color: rgb(255, 255, 255);
+  font-size: 2.4vh;
+  font-weight: 600;
+
+  font-family: 'Inria Sans', sans-serif;
+  top: 5vh; /* Ví dụ, sử dụng vh để giữ vị trí tương đối với viewport */
+  right: 0; /* Đặt vị trí bên trái của div ngang bằng 0 để nó nằm bên trái */
+  margin: 1vh 0 0 0; /* Cập nhật margin để chỉ định khoảng cách từ trên xuống */
+
+margin-left: 2.5vh;
+overflow-wrap: break-word; /* Ngăn chữ tràn ra ngoài khung */
+text-decoration: underline;
+margin-bottom: 2vh;
+
+}
+.textuti
+{ color: rgba(255, 255, 255, 0.927);
+  font-size: 2.4vh;
+  font-weight: 400;
+
+  font-family: 'Inria Sans', sans-serif;
+  top: 5vh; /* Ví dụ, sử dụng vh để giữ vị trí tương đối với viewport */
+  right: 0; /* Đặt vị trí bên trái của div ngang bằng 0 để nó nằm bên trái */
+
+margin-right: 2.5vh;
+margin-bottom: 1vh;
+margin-left: 1vh;
+overflow-wrap: break-word; /* Ngăn chữ tràn ra ngoài khung */
+
+}
+.circle {
+  position: relative;
+  width: 100px; /* Điều chỉnh kích thước vòng tròn */
+  height: 100px; /* Điều chỉnh kích thước vòng tròn */
+  border-radius: 50%;
+  border: 2px solid #000; /* Điều chỉnh màu và độ dày của viền */
+}
+.scrollContainer {
+  max-height: 400px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.scrollProgressContainer {
+  width: 100%;
+  height: 5px;
+  background-color: #f0f0f0;
+  margin-bottom: 10px;
+}
+
+.scrollProgress {
+  height: 100%;
+  background-color: #4caf50;
+}

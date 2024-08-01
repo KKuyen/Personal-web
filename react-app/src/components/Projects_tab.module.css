@@ -103,7 +103,7 @@
     background-position: center;
     position: relative; /* Đặt vị trí tương đối cho .theSun */
   top:0;
-    transform: translateX(-75%); /* Dịch chuyển sang phải 50% chiều rộng của nó */
+    transform: translateX(-70%); /* Dịch chuyển sang phải 50% chiều rộng của nó */
     z-index: 2;
   
   }
@@ -130,7 +130,7 @@
     bottom: 0; /* Đặt ở dưới cùng */
     margin-top: 9px; /* Điều chỉnh khoảng cách từ đỉnh, nếu cần */
     margin-left: 24.9vh; /* Sử dụng px thay vì vh */
-    margin-bottom: 10vh;
+    margin-bottom: 28vh;
     font-size: 2vh; /* Ví dụ: đặt kích thước chữ cố định */
     user-select: none;
     opacity:0;

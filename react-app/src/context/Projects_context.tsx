@@ -8,15 +8,17 @@ interface MyObject {
   text: string;
   utilized: string;
   linkgithub?: string;
+  teammembers?: number;
+  Responsibility?: string;
+  time?: string;
+
+
 }
 
 const myArray: MyObject[] = [
-  { id: 1, copanyname: "ABC Application", text: "sdfqweqwwwwwwwwwwwwwwwwwwwwweeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee", utilized: "Đã sử dụng" },
-  { id: 2, copanyname: "ABC Application", text: "sdfqweqwwwwwwwwwwwwwwwwwwwww", utilized: "Đã sử dụng" },
-   { id: 3, copanyname: "ABC Application", text: "sdfqweqwwwwwwwwwwwwwwwwwwwww", utilized: "Đã sử dụng" },
-  { id: 4, copanyname: "ABC Application", text: "sdfqweqwwwwwwwwwwwwwwwwwwwww", utilized: "Đã sử dụng" },
-  { id: 5, copanyname: "ABC Application", text: "sdfqweqwwwwwwwwwwwwwwwwwwwww", utilized: "Đã sử dụng" },
-  { id: 6, copanyname: "ABC Application", text: "sdfqweqwwwwwwwwwwwwwwwwwwwww", utilized: "Đã sử dụng" },
+  { id: 1, time:"2024",Responsibility:" UI Design, Database Design, Frontend(Navigation bar and Home function)" , copanyname: "Personal spending management application", text: "Developed a Android application using Android Studio that allow users to easily create virtual wallets, manage expense and income.", utilized: "Java, Android Studio, FireBase, MySQL, RESTful API", linkgithub: "https://github.com/NDHunq/SE114_QLCT", teammembers: 5 },
+  { id: 1, time:"2024",Responsibility:" UI Design, Database Design, Frontend(Sign in, Create account, account management, Main UI and Navigation bar)" , copanyname: "Private clinic management application", text: "Developed a desktop application using JavaFx that allow users to easily manage private clinic.", utilized: "Java, JavaFx, SQL Server", linkgithub: "https://github.com/NDHunq/SE104_QLPMT", teammembers: 4},
+  
 
 ];
 
@@ -67,17 +69,30 @@ const Summary: React.FC = () => {
     <div className={styles.scrollableList} >
       {myArray.map((item) => (
         <div key={item.id} className={styles.fbaoquanh}>
-          <div className={styles.divngang}>
-          <a href='https://student.uit.edu.vn/sites/daa/files/bangcap/22521225/22521225_bangcap_TOEIC_LR_20231215182217.jpg' className={styles.ngang} target="_blank" rel="noopener noreferrer" >
+          <div className={styles.divngang3}>
+          <a  href={item.linkgithub} className={styles.ngang} target="_blank" rel="noopener noreferrer" >
             <p className={styles.toeic}>
             {item.copanyname}
+            <img className={styles.imglinktoeic}  src="/external-link.png" alt="Description 3" />
             </p>
             </a>
-            <img className={styles.imglinktoeic}  src="/external-link.png" alt="Description 3" />
+            <div className={styles.text_context_time}> {item.time} </div>
+           
+          
+            
           </div>
+          <div className={styles.divngang}>
+              <p className={styles.Utilized}>Team members:     </p>
+              <p className={styles.textuti}> {item.teammembers}   </p>
+              </div>
           <div className={styles.text}>
           {item.text}
             </div>
+            <div className={styles.divngang}>
+              
+              <p className={styles.text}><span className={styles.tag}>Responsibility:</span> {item.Responsibility}   </p>
+              </div>
+            
             <div className={styles.divngang}>
               <p className={styles.Utilized}>Utilized: </p>
               <p className={styles.textuti}> {item.utilized}</p>

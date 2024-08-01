@@ -1,7 +1,7 @@
 
 import styles from './Projects_tab.module.css';
 import Summary from '../context/Projects_context';
-import Sun from '../context/Mercury_context';
+import Sun from '../context/Pluto_context';
 import React, { useEffect, useState, Dispatch, SetStateAction } from 'react';
 import { useNavigate } from 'react-router-dom';
 interface Function2Props {
@@ -80,7 +80,7 @@ const Function6: React.FC<Function2Props> = ({ setActiveLink }) => {
         // Kích hoạt animation cho sunElement
         if (sunElement) {
           sunElement.animate([
-            { transform: 'translateX(-75%) translateY(0vh) ', height: '90vh', width: '90vh' },
+            { transform: 'translateX(-70%) translateY(0vh) ', height: '90vh', width: '90vh' },
             { transform: 'translateX(+11.5vh) translateY(2vh)', height: '35vh', width: '35vh' }
           ], {
             duration: 500, // 0.5 giây
@@ -155,7 +155,7 @@ const Function6: React.FC<Function2Props> = ({ setActiveLink }) => {
           sunElement.animate([
            
             { transform: 'translateX(+11.5vh) translateY(2vh)', height: '35vh', width: '35vh' },
-            { transform: 'translateX(-75%) translateY(0vh)', height: '90vh', width: '90vh' }
+            { transform: 'translateX(-70%) translateY(0vh)', height: '90vh', width: '90vh' }
           ], {
             duration: 500, // 0.5 giây
             fill: 'forwards' // Giữ trạng thái cuối cùng của animation

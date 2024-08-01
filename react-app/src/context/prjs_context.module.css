@@ -14,7 +14,9 @@
   font-family: 'Inria Sans', sans-serif;
   top: 5vh; /* Ví dụ, sử dụng vh để giữ vị trí tương đối với viewport */
   left: 10vw; /* Sử dụng vw để vị trí phụ thuộc vào chiều rộng của viewport */
-  margin: 0vh 0; 
+
+
+
   
 
 
@@ -32,8 +34,9 @@
   top: 5vh; /* Ví dụ, sử dụng vh để giữ vị trí tương đối với viewport */
   left: 10vw; /* Sử dụng vw để vị trí phụ thuộc vào chiều rộng của viewport */
   margin: 0vh 0; 
-  margin-left: 20vh;
+  margin-right: 3vh;
   margin-top:2vh;
+
 
 }
 .text_context_Summary22
@@ -65,6 +68,14 @@
 {
   display: flex; /* Tạo một flex container */
   /* Phân bố khoảng trống giữa các thành phần con */
+  align-items: center; /* Căn giữa các items theo chiều dọc */
+
+}
+
+.divngang3
+{
+  display: flex; /* Tạo một flex container */
+justify-content: space-between;
   align-items: center; /* Căn giữa các items theo chiều dọc */
 
 }
@@ -131,7 +142,7 @@
 
 }
 .sun_highlight {
-  color: #00FF94;
+  color: #A57BFD;
   font-size: 2.2vh;
   font-weight: 800;
 
@@ -263,7 +274,7 @@
 {
   background-color: #4d2d9350;
   height: fit-content;
-  width: 80vh;
+  width: 88vh;
   border-radius: 1vh;
   margin-top: 1.9vh;
  
@@ -276,6 +287,7 @@
   margin-left: 1px;
   height: 1.5vh;
   width: 1.5vh; /* Chỉnh sửa giá trị này để thay đổi kích thước chiều rộng */
+  margin-bottom: 2vh;
 
  
 }
@@ -342,7 +354,8 @@ margin-right: 2.5vh;
 margin-right: 2.5vh;
 margin-left: 2.5vh;
 overflow-wrap: break-word; /* Ngăn chữ tràn ra ngoài khung */
-
+margin-bottom: 0vh;
+transform: translateY(-0.8vh);
 
 
 }
@@ -401,4 +414,20 @@ overflow-wrap: break-word; /* Ngăn chữ tràn ra ngoài khung */
 .scrollProgress {
   height: 100%;
   background-color: #4caf50;
+}
+.tag {
+  color: rgb(255, 255, 255);
+  font-size: 2.4vh;
+  font-weight: 600;
+
+  font-family: 'Inria Sans', sans-serif;
+  top: 5vh; /* Ví dụ, sử dụng vh để giữ vị trí tương đối với viewport */
+  right: 0; /* Đặt vị trí bên trái của div ngang bằng 0 để nó nằm bên trái */
+  margin: 1vh 0 0 0; /* Cập nhật margin để chỉ định khoảng cách từ trên xuống */
+
+
+overflow-wrap: break-word; /* Ngăn chữ tràn ra ngoài khung */
+text-decoration: underline;
+margin-bottom: 2vh;
+
 }
